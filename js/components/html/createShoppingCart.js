@@ -1,10 +1,20 @@
 import { getShoppingCart } from "../storage/localStorage.js";
 import displayMessage from "../messages/displayMessage.js";
 
+
+export const removeContainer = document.querySelector(".remove-this");
+
+export const removeHandler = () => {
+    console.log("remove me!")
+    localStorage.removeItem()
+} 
+
+
 export function createShoppingCart (){
     const shoppingCart = getShoppingCart();
 
     const cartContainer = document.querySelector(".cart__products");
+    
 
     cartContainer.innerHTML = "";
 
@@ -15,6 +25,10 @@ export function createShoppingCart (){
             ".cart__products"
         );
     }
+
+   
+
+    
 
     /* Display products from the localStorage() */
     shoppingCart.forEach(function (product) {
@@ -31,6 +45,10 @@ export function createShoppingCart (){
 
                     <a href="${product.url}" class="cart__product-card__link link">
                         View Product <i class="fal fa-angle-right"></i>
+                    </a>
+
+                    <a class="remove-this" href="#">
+                        Remove
                     </a>
                 </div>
                 
@@ -51,4 +69,7 @@ export function createShoppingCart (){
     }
 
     totalPriceContainer.innerHTML = totalPrice + " NOK"; 
+
+
+    console.log(shoppingCart)
 }

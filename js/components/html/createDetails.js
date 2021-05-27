@@ -93,6 +93,6 @@ export function createDetails(detail) {
     }
 
     function saveFavs(carts) {
-        localStorage.setItem("shoppingcart", JSON.stringify(carts));
+        localStorage.setItem("shopping-cart", JSON.stringify(carts));
     }
 }

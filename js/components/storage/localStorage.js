@@ -1,6 +1,6 @@
 // Get Shopping Cart
 export function getShoppingCart() {
-    const shoppingCart = localStorage.getItem("shoppingcart");
+    const shoppingCart = localStorage.getItem("shopping-cart");
 
     if (shoppingCart === null) {
         return [];

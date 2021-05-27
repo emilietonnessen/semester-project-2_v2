@@ -1,0 +1,24 @@
+.products{
+    justify-content: space-between;
+
+    @media screen and (max-width: 567px) {
+        justify-content: center;
+        margin: 0 0 50px 0;
+    }
+
+    @media screen and (min-width: 568px) and (max-width: 991px) {
+        justify-content: center;
+        margin: 0 0 50px 0;
+    }
+
+    @media screen and (min-width: 992) {
+        justify-content: center;
+        margin: 0 0 50px 0;
+    }
+}
+
+.filter{
+    margin: 0;
+    text-align: right;
+    justify-content: flex-end;
+}

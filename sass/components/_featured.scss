@@ -1,0 +1,61 @@
+.featured{
+    width: 100%;
+    position: relative;
+    margin: 100px 0;
+
+    @media screen and (max-width: 567px){
+        margin: 50px 0;
+    }
+
+
+    &__title{
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 450px;
+        padding: 0 30px;
+        background: white;
+        z-index: 555;
+        margin-right: auto;
+        margin-left: auto;
+
+        
+
+        &--cart{
+            @media screen and (max-width: 567px){
+                max-width: 260px;
+                padding: 0;
+            }
+
+            @media screen and (min-width: 568px) and (max-width: 991px){
+                max-width: 360px;
+                padding: 0;
+            }
+        }
+
+        &--best-selling{
+            @media screen and (max-width: 567px){
+                max-width: 210px;
+                padding: 0;
+            }
+
+            @media screen and (min-width: 568px) and (max-width: 991px){
+                max-width: 300px;
+                padding: 0;
+            }
+        }
+
+    }
+
+    &__line{
+            height: 1px;
+            background: black;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            z-index: -55;
+
+            @media screen and (max-width: 567px){
+                top: 12px;
+            }
+        }
+}

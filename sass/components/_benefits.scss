@@ -1,0 +1,52 @@
+.benefits{
+    background: colors(grey);
+    padding: 10px 0;
+    z-index: 666;
+    justify-content: center;
+    position: relative;
+    display: block;
+    
+
+    &__container{
+        padding: clamp(5px, 1vw, 15px);  
+
+        & .row{
+            @media screen and (max-width: 400px) {
+                width: 100%;
+            }
+
+            @media screen and (min-width: 568px){
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    &__content{
+        padding: clamp(5px, 1vw, 10px);
+    }
+
+    &__title{
+        margin: 0;
+        font-size: clamp(10px, 1.5vw, 13px);
+    }
+
+    &__desc{
+        margin: 0;
+        font-size: clamp(8px, 2vw, 13px);
+    }
+
+    &__icon{
+        text-align: right;
+        padding: 0;
+        padding-right: clamp(5px, 1vw, 10px);
+        font-size: clamp(18px, 4vw, 35px);
+        max-width: clamp(45px, 2vw, 60px);
+        text-align: right;    
+    }
+}
+
+.benefits__container--extra-padding{
+    @media screen and (max-width: 360px) {
+        padding-left: 11px;
+    }
+}

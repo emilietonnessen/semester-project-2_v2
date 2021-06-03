@@ -206,4 +206,22 @@
             height: 23px;    
         }
     }
+
+    &__remove {
+        color: $grey-color-dark-1;
+        font-size: 14px;
+        margin-top: 40px;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            text-decoration: underline;
+            color: darken($grey-color-dark-1, 10);
+        }
+
+        & > i {
+            margin-right: 3px;
+            font-size: 13px;
+        }
+    }
 }

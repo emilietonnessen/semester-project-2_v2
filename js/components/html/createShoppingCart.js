@@ -2,15 +2,25 @@ import { getShoppingCart } from "../storage/localStorage.js";
 import displayMessage from "../messages/displayMessage.js";
 
 
-export const removeContainer = document.querySelector(".remove-this");
+/* export const removeContainer = document.querySelector(".remove-this");
 
 export const removeHandler = () => {
     console.log("remove me!")
     localStorage.removeItem()
-} 
+}  */
 
 
 export function createShoppingCart (){
+    
+
+
+
+
+
+
+
+
+
     const shoppingCart = getShoppingCart();
 
     const cartContainer = document.querySelector(".cart__products");
@@ -46,10 +56,6 @@ export function createShoppingCart (){
                     <a href="${product.url}" class="cart__product-card__link link">
                         View Product <i class="fal fa-angle-right"></i>
                     </a>
-
-                    <a class="remove-this" href="#">
-                        Remove
-                    </a>
                 </div>
                 
             </div>
@@ -72,4 +78,10 @@ export function createShoppingCart (){
 
 
     console.log(shoppingCart)
+
+
+
+
+
+    
 }

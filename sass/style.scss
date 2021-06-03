@@ -4,8 +4,8 @@
 
 
 // Utils
-@import './utils/variables';
-@import './utils/utilities';
+@import './abstracts/variables';
+@import './abstracts/utilities';
 
 
 // Base
@@ -24,7 +24,7 @@
 // Pages
 @import "./pages/admin/login";
 @import "./pages/admin/product-menu";
-@import "./pages/admin/admin-menu";
+@import "./pages/admin/admin-menu"; 
 @import "./pages/admin/edit";
 
 

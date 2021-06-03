@@ -4,11 +4,7 @@ The update of "Semester Project 2" are a part of a larger assignment in the "Por
 
 
 ### Instructions
-Download the Zip file and run
-```
-npm install
-Then run
-```
-npm run start
-```
-to start a localhost at port 3000
+Download the Zip file and "open with live server" with the "Live Server" extension
+
+### Admin Access
+If you want access to the Admin page, send an email to emilie@tonnessen.com with the intent and purpose.

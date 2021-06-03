@@ -1,23 +1,9 @@
-export default $(document).ready(function(){
-	$('.nav__menu-icon').click(function(){
-		$(this).toggleClass('open');
+const menuIcon = document.querySelector('.nav__menu-icon');
+const menu = document.querySelector(".nav__menu");
 
-		if($(this).hasClass('open')) {
-			// Customer face
-			$('.nav__menu').addClass('open-menu');
-			$('body').addClass('fixed');
+menuIcon.addEventListener("click", toggleMobileMenu);
 
-			// Admin
-			$('.product-menu').addClass('product-menu--open');
-
-		} else {
-			// Customer Face
-			$('.nav__menu').removeClass('open-menu');
-			$('body').removeClass('fixed');
-
-			// Admin
-			$('.product-menu').removeClass('product-menu--open');
-
-		}
-	});
-});
+export default function toggleMobileMenu() {
+	menuIcon.classList.toggle("open")
+	menu.classList.toggle("open-menu")
+}

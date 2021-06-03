@@ -1,5 +1,21 @@
+const menuIcon = document.querySelector('.nav__menu-icon');
+const productMenuContainer = document.querySelector(".product-menu");
+menuIcon.addEventListener("click", toggleMobileMenu);
+
+
+export default function toggleMobileMenu() {
+	menuIcon.classList.toggle("open")
+	productMenuContainer.classList.toggle("product-menu--open")
+}
+ 
+
+
+
 /* Product Menu */
 export function productMenu(item){
+
+
+    
     const productMenuContainer = document.querySelector(".product-menu__list");
 
     productMenuContainer.innerHTML = "";

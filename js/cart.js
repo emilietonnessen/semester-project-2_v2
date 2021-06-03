@@ -14,16 +14,15 @@ search.addEventListener("click", redirectUser);
 
 
 // Trying to remove the localStorage item
-    const clearLocalStorageContainer = document.querySelector(".clear-local-storage")
+const clearLocalStorageContainer = document.querySelector(".clear-local-storage")
 
-    const clearLocalStorage =  () => {
-        const windowConfirm = window.confirm("Are you sure you want clear the cart?");
+const clearLocalStorage =  () => {
+    const windowConfirm = window.confirm("Are you sure you want clear the cart?");
 
-        if (windowConfirm) {
-            
-            localStorage.clear("shopping-cart");
-            setTimeout(location.reload(), 2000)
-        }
+    if (windowConfirm) {
+        localStorage.clear("shopping-cart");
+        setTimeout(location.reload(), 2000)
     }
+}
 
-    clearLocalStorageContainer.addEventListener("click", clearLocalStorage);
+clearLocalStorageContainer.addEventListener("click", clearLocalStorage);
